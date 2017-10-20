@@ -1,6 +1,6 @@
 package model;
 
-import java.time.LocalDate;
+// import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class BDSimulado {
@@ -40,8 +40,10 @@ public class BDSimulado {
 		this.bibliotecarios.add(b2);
 
 		// Criando Emprestimnos
-		Emprestimo e1 = new Emprestimo(l1, u1, b1, LocalDate.of(2017, 10, 10), LocalDate.of(2017, 10, 15));
-		Emprestimo e2 = new Emprestimo(l2, u2, b2, LocalDate.of(2017, 10, 12), LocalDate.of(2017, 10, 17));
+		Emprestimo e1 = new Emprestimo(l1, u1,
+				b1/* , LocalDate.of(2017, 10, 10), LocalDate.of(2017, 10, 15) */);
+		Emprestimo e2 = new Emprestimo(l2, u2,
+				b2/* , LocalDate.of(2017, 10, 12), LocalDate.of(2017, 10, 17) */);
 
 		// Adicionando Emprestimo
 		this.emprestimo.add(e1);
@@ -49,7 +51,7 @@ public class BDSimulado {
 	}
 
 	// Metodo para recuperar o arraylist de emprestimos
-	public ArrayList<Emprestimo> geEmprestimos() {
+	public ArrayList<Emprestimo> getEmprestimos() {
 		return this.emprestimo;
 	}
 
