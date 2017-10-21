@@ -8,7 +8,7 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return "Usuario [nome=" + nome + ", matricula=" + matricula + ", curso=" + curso + "]";
+		return " - Nome do Usuario: " + nome + "\n - matricula: " + matricula + "\n - curso: " + curso;
 	}
 
 	public Usuario(String nome, String matricula, String curso) {
